@@ -25,13 +25,13 @@ sorted_count = {k:v for k,v in sorted(letter_count.items(), key=lambda item:item
 print(sorted_count)
 a = plt.figure()
 ax = a.add_axes([0,0,1,1])
-ax.bar(list(sorted_count.keys()), list(sorted_count.values()))
+ax.bar(list(sorted_count.keys()), list(sorted_count.values()), color=(0.135, 0.550, 0.750, 0.75))
 #plt.plot(list(sorted_count.keys()), list(sorted_count.values())) 
 plt.title('English Letter Usage Statistics')
 plt.ylabel('Occurrence in English Dictionary')
 plt.xlabel('Letters')
-#plt.show()
-plt.savefig('English_letter_usage_statistics.jpg',bbox_inches='tight', dpi=150)
+plt.show()
+#plt.savefig('English_letter_usage_statistics.jpg', bbox_inches='tight', dpi=150)
 #plt.close()
 
 # test = 'abrakadabra'
